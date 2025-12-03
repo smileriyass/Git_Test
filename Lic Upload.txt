@@ -1,0 +1,27 @@
+Check SQL Password
+Goto
+C:\AOSService\webroot\web.config
+open with notepad
+search axdb
+Check username 
+check password is encrypted and close the file
+
+
+C:\AOSService\PackagesLocalDirectory\bin
+Powershell admin
+C:\AOSService\webroot\bin\Microsoft.Dynamics.AX.Framework.ConfigEncryptor.exe -decrypt C:\AOSService\webroot\web.config
+Chane the source file name C:\Temp\Lic\RESBasic_DNT.txt (as Required)
+
+
+Run the below coomand in 
+
+C:\AOSService\PackagesLocalDirectory\bin
+Powershell admin
+
+Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir C:\AOSService\PackagesLocalDirectory --bindir C:\AOSService\PackagesLocalDirectory --sqlserver . --sqldatabase AxDB --sqluser d365dbadmin --sqlpwd AOSWebSite@123 --licensefilename "C:\Temp\Lic\RESBasic_DNT.txt"
+
+Once done check the the opeation status and correct lic updated
+
+After Completing above step
+Open Visual Studio 
+Build this Lic file

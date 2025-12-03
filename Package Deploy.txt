@@ -1,0 +1,30 @@
+First unblock the file then extract the file.
+Unzip using 7 Zip or any unzip software
+Open Unzipped folder (Default Topology Data file  with notepad)
+Copy all services and paste
+
+	<string>ALMService</string>
+	<string>AOSService</string>       
+	<string>BIService</string>
+	<string>DevToolsService</string>
+	<string>DIXFService</string>      
+	<string>MROneBox</string>         
+	<string>PayrollTaxModule</string>         
+	<string>PerfSDK</string>  
+	<string>ReportingService</string>                 
+	<string>SCMSelfService</string>   
+   
+Go package deployment cmd and change the file name
+Before running this command Visual Studio need to closed and all users show be removed
+
+AXUpdateInstaller.exe generate -runbookid="PF67_10.0.43_03June2025" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="PF67_10.0.43_03June2025.xml" 
+
+AXUpdateInstaller.exe import -runbookfile="PF67_10.0.43_03June2025.xml"
+
+AXUpdateInstaller.exe execute -runbookid="PF67_10.0.43_03June2025"
+
+
+Goto Extrat file folder open powershell with admin
+goto cmd
+paste the above command AXUpdateInstaller.exe
+Check 12 Steps

@@ -1,0 +1,5 @@
+ModuleToRemove
+
+Goto Package (going to deploy)
+AOSService--Scripts-
+Create a Text file with file name ModuleToRemove and save the file

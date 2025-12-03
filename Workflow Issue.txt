@@ -1,0 +1,9 @@
+Front End---Sys Administration---Batch Jobs---
+C:\Program Files (x86)\Microsoft SDKs\Azure\Storage Emulator
+open powershell in admin mode
+
+.\AzureStorageEmulator.exe status
+.\AzureStorageEmulator.exe start
+
+If below error comes----Restart the Server
+Error: Port conflict with existing application.

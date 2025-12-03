@@ -1,0 +1,13 @@
+Move DB from Sandbox to Dev
+login LCS
+Choose tenent
+open Sandbox
+goto Maintain
+click move database
+refresh database (Move DB from Prod to SandBox)
+chooose Server (Source Server)
+Click Yes
+proceed
+it will popup to save click Yes
+Export Database (to Move DB from Sandbox to Asset Lib)
+

@@ -1,0 +1,12 @@
+Get Latest
+Open Visual Studio
+Click Source Control explorer
+DNT PYL Delvelop
+Trunk
+Main
+Metadata--Right Click-- Get latest version
+Refresh Models
+1.PYLLicenseModel -Build Lic
+2.PYLPayrollSuite- Build Base
+3.PYLHRMCustomization - Build Model
+

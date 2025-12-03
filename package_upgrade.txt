@@ -1,0 +1,54 @@
+First unblock the file then extract the file.
+
+Open below mention file. Then copy and paste the services in mention place.
+
+
+( Change/Edit in DefaultTopologyData.xml )
+
+
+	<string>ALMService</string>
+	<string>AOSService</string>       
+	<string>BIService</string>
+	<string>DevToolsService</string>
+	<string>DIXFService</string>      
+	<string>MROneBox</string>         
+	<string>PayrollTaxModule</string>         
+	<string>PerfSDK</string>  
+	<string>ReportingService</string>         
+	<string>RetailCloudPos</string>   
+	<string>RetailHQConfiguration</string>    
+	<string>RetailSDK</string>        
+	<string>RetailSelfService</string>        
+	<string>RetailServer</string>     
+	<string>RetailStorefront</string>         
+	<string>SCMSelfService</string>      
+
+
+step 3  open powershell -> change cmd  ->  run this three command.(first change the filename)
+
+
+
+AXUpdateInstaller.exe generate -runbookid="ResBase_09July2025-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="ResBase_09July2025-runbook.xml" 
+
+AXUpdateInstaller.exe import -runbookfile="ResBase_09July2025-runbook.xml"
+
+AXUpdateInstaller.exe execute -runbookid="ResBase_09July2025-runbook"
+
+
+
+IF we required means use this command.
+
+If you want to skip any step prees ctrl C
+
+
+AXUpdateInstaller.exe execute -runbookid="ResBase_09July2025-runbook" -setstepcomplete=11
+
+
+
+
+AXUpdateInstaller.exe execute -runbookid="PF64_02Jan2025-runbook" -rerunstep=1
+
+PF_68_10.0.44
+
+
+

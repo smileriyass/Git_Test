@@ -1,0 +1,12 @@
+Deploy Reports
+
+Below command is to depoly all reports (we mostly use this command) 
+No need to change any file location (Just copy & Paste)
+Open powershell --> run the command as Administrator
+
+C:\AosService\PackagesLocalDirectory\Plugins\AxReportVmRoleStartupTask\DeployAllReportsToSSRS.ps1 -PackageInstallLocation “C:\AosService\PackagesLocalDirectory”
+
+
+This command is parcticular report deploy command.
+
+C:\AosService\PackagesLocalDirectory\Plugins\AxReportVmRoleStartupTask\DeployAllReportsToSSRS.ps1 -Module ApplicationSuite -ReportName <ReportName> -PackageInstallLocation “C:\AosService\PackagesLocalDirectory”
